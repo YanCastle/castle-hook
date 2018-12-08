@@ -1,0 +1,15 @@
+{
+  "name": "castle-hook",
+  "version": "1.0.1",
+  "repository": "https://github.com/YanCastle/castle-hook",
+  "author": "CastleMY <490523604@qq.com>",
+  "main": "dist/hook.js",
+  "types": "dist/hook.d.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "yarn.lock",
+    "READMD.md"
+  ],
+  "license": "MIT"
+}
