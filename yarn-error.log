@@ -1,0 +1,50 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\鄢鹏权\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js publish
+
+PATH: 
+  c:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\nginx+php\PHP7;C:\Program Files\WorldPainter;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_66\bin;C:\ProgramData\ComposerSetup\bin;C:\Python27\;C:\Users\鄢鹏权\AppData\Roaming\nvm;C:;Program Files\nodejs;C:\Users\YanPengQuan\AppData\Local\Android\android-sdk\platform-tools;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\TortoiseGit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Python27\;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\鄢鹏权\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\鄢鹏权\AppData\Roaming\npm\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\nginx+php\PHP7;C:\Program Files\WorldPainter;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_66\bin;C:\ProgramData\ComposerSetup\bin;C:\Users\鄢鹏权\AppData\Local\Microsoft\WindowsApps;C:\Users\鄢鹏权\AppData\Roaming\npm;C:\Users\鄢鹏权\AppData\Roaming\Composer\vendor\bin;D:\C#;C:\Users\YanPengQuan\AppData\Roaming\npm;C:\Users\YanPengQuan\AppData\Local\Yarn\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\鄢鹏权\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:125278:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+
+npm manifest: 
+  {
+    "name": "@ctsy/hook",
+    "version": "1.0.1",
+    "repository": "https://github.com/YanCastle/castle-hook",
+    "author": "CastleMY <490523604@qq.com>",
+    "main": "dist/hook.js",
+    "types": "dist/hook.d.ts",
+    "files": [
+      "dist/**/*.js",
+      "dist/**/*.d.ts",
+      "yarn.lock",
+      "READMD.md"
+    ],
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

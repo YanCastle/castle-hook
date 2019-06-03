@@ -29,7 +29,7 @@ export class Hook {
      * @param Callback 
      * @param Async 
      */
-    regist(Name: string, When: HookWhen, HookID: string, Callback: Function, Async: boolean = true) {
+    regist(Name: string, When: HookWhen, HookID: string, Callback: Function, Async: boolean = false) {
         if (!Hooks[Name]) {
             Hooks[Name] = {
                 [HookWhen.After]: {
@@ -99,6 +99,7 @@ export class Hook {
         for (let i = 0; i < syncHooks.length; i++) {
             await Hooks[Name][When].Sync[syncHooks[i]](Ctx, Data)
         }
+        await Promise.all(asyncs);
         return true;
     }
 }
