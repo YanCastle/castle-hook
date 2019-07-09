@@ -11,6 +11,10 @@ const Hooks: {
             Async: { [index: string]: Function },
             Sync: { [index: string]: Function }
         },
+        [HookWhen.Error]: {
+            Async: { [index: string]: Function },
+            Sync: { [index: string]: Function }
+        },
     }
 } = {};
 /**
@@ -18,7 +22,8 @@ const Hooks: {
  */
 export enum HookWhen {
     After,
-    Before
+    Before,
+    Error,
 }
 export class Hook {
     /**
@@ -37,6 +42,10 @@ export class Hook {
                     Sync: {}
                 },
                 [HookWhen.Before]: {
+                    Async: {},
+                    Sync: {}
+                },
+                [HookWhen.Error]: {
                     Async: {},
                     Sync: {}
                 }
