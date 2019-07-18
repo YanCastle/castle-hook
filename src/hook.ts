@@ -102,13 +102,12 @@ export class Hook {
         let hooks = Object.keys(Hooks[Name][When].Async);
         let asyncs = [];
         for (let i = 0; i < hooks.length; i++) {
-            asyncs.push(Hooks[Name][When].Async[hooks[i]](Ctx, Data))
+            await Hooks[Name][When].Async[hooks[i]](Ctx, Data)
         }
         let syncHooks = Object.keys(Hooks[Name][When].Sync);
         for (let i = 0; i < syncHooks.length; i++) {
             await Hooks[Name][When].Sync[syncHooks[i]](Ctx, Data)
         }
-        await Promise.all(asyncs);
         return true;
     }
 }
