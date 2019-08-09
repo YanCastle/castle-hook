@@ -113,3 +113,12 @@ export class Hook {
 }
 const hook = new Hook()
 export default hook;
+
+declare let window: any;
+try {
+    if (window) {
+        window.Hook = hook;
+    }
+} catch (error) {
+
+}
