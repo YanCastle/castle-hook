@@ -5,11 +5,24 @@
   "author": "CastleMY <490523604@qq.com>",
   "main": "dist/hook.js",
   "types": "dist/hook.d.ts",
+  "keywords": [
+    "ctsy", "tansuyun", "yanpengquan", "ctsy", "auth", "api", "auth-api", "登陆", "注册"
+  ],
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
     "yarn.lock",
     "READMD.md"
   ],
-  "license": "MIT"
+  "scripts": {
+    "build": "webpack --mode production --config build/config.js  src/hook.ts && tsc",
+    "prepublish": "yarn build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
 }
