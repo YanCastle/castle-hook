@@ -1,12 +1,20 @@
 {
   "name": "@ctsy/hook",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/YanCastle/castle-hook",
   "author": "CastleMY <490523604@qq.com>",
   "main": "dist/hook.js",
   "types": "dist/hook.d.ts",
   "keywords": [
-    "ctsy", "tansuyun", "yanpengquan", "ctsy", "auth", "api", "auth-api", "登陆", "注册"
+    "ctsy",
+    "tansuyun",
+    "yanpengquan",
+    "ctsy",
+    "auth",
+    "api",
+    "auth-api",
+    "登陆",
+    "注册"
   ],
   "files": [
     "dist/**/*.js",
