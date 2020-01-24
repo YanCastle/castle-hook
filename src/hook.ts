@@ -26,6 +26,7 @@ export enum HookWhen {
     Error,
 }
 export class Hook {
+    static HookWhen = HookWhen;
     /**
      * 注册Hook事件
      * @param Name Hook`s Name
